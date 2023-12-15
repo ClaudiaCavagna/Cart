@@ -114,13 +114,30 @@ code {
   color: var(--dark);
   display: flex;
   justify-content: space-between;
-  width: 70%;
+  width: 60%;
   border: 2px solid var(--dark-blue);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px var(--shadow);
 }
 
-.prod img {
+.item {
+  display: flex;
+  justify-items: space-between;
+}
+
+
+.prod-img {
   width: 150px;
   height: 150px;
-  border: 2px solid var(--white);
+  border: 3px solid var(--white);
+  border-radius: 8px;
 }
+
+/* .prod-description {
+  margin-left: 3rem;
+}
+
+.prod-qty {
+  margin-left: 3rem;
+} */
