@@ -1,10 +1,14 @@
-
+import Navbar from "./components/Navbar";
+import TotalBar from "./components/TotalBar";
+import Cart from "./components/Cart";
 
 function App() {
   return (
-    <div>
-      <h1>Cart</h1>
-    </div>
+    <>
+      <Navbar />
+      <TotalBar />
+      <Cart />
+    </>
   );
 }
 

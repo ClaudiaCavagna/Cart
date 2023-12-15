@@ -1,0 +1,126 @@
+:root {
+  --dark-blue: rgb(6, 6, 46);
+  --white: rgb(255, 255, 255);
+  --dark: #0f0e0d; 
+  --shadow: #0f0e0dc2;
+}
+
+/* GENERAL STYLE */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--white);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* PROJECTS STYLE */
+.nav {
+  background-color: var(--dark-blue);
+  margin-top: 0;
+  box-shadow: 2px 2px 10px var(--dark);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.nav-section {
+  margin-left: 8rem;
+}
+
+.nav-section h4 {
+  font-size: 1.4rem;
+}
+
+.btn-nav {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  border: none;
+  margin-right: 8rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  display: flex;
+}
+
+.nav-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.cart-counter {
+  background-color: var(--white);
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  color: var(--dark-blue);
+}
+
+.total-cart {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 70%;
+  left: 80%;
+  border: 1px solid var(--dark-blue);
+  padding: 1rem;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  border-radius: 8px;
+  color: var(--dark-blue);
+}
+
+.total-cart hr {
+  background-color: var(--dark-blue);
+  height: 0.2rem;
+}
+
+.total-cart button {
+  border: 1px solid var(--dark-blue);
+  border-radius: 8px;
+  padding: 0.3rem 1rem;
+  color: var(--white);
+  background-color: var(--dark-blue);
+  cursor: pointer;
+}
+
+.total-cart button:hover {
+  /* color: var(--white);
+  background-color: var(--dark-blue); */
+  color: var(--dark-blue);
+  background-color: var(--white);
+}
+
+.prod-section {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-left: 4rem;
+  margin-top: 3rem;
+}
+
+.prod {
+  color: var(--dark);
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  border: 2px solid var(--dark-blue);
+  margin-bottom: 2rem;
+}
+
+.prod img {
+  width: 150px;
+  height: 150px;
+  border: 2px solid var(--white);
+}
