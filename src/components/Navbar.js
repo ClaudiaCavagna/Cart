@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className='nav'>
         <header className='nav-section'>
-            <h4>ShopWii</h4>
+            <h4>Shoppy</h4>
         </header>
         <button className='btn-nav'>
             <HiShoppingCart className='nav-icon' />

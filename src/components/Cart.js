@@ -8,7 +8,7 @@ const Cart = () => {
     <section className='prod-section'>
       {products.map(el => {
         return (
-          <div className='prod'>
+          <div>
           <Item key={el.id} {...el} />
           </div>
 
