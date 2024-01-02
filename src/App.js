@@ -5,7 +5,7 @@ import Loading from "./components/Loading";
 import {useGlobalContext} from "./context/context";
 
 function App() {
-  const { isLoading, products } = useGlobalContext();
+  const { isLoading, products, total } = useGlobalContext();
   if(isLoading) {
     return (
       <>
@@ -23,7 +23,7 @@ function App() {
         <h4>No products in the cart</h4>
       </div>
       }
-      <TotalBar />
+      {total > 0 && <TotalBar />}
     </>
   );
 }
